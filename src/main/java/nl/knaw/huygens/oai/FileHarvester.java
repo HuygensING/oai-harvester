@@ -43,8 +43,9 @@ public class FileHarvester extends OaiHarvester {
 	public void getRecord(String identifier) throws Exception {
 		String filename = identifier + ".xml";
 		System.out.println("Saving record: " + identifier + " to " + filename);
-		String query = String.format("verb=GetRecord&identifier=%s&metadataPrefix=oai_ead_full",
-					URLEncoder.encode(identifier, "UTF-8"));
+		String query = String.format("verb=GetRecord&identifier=%s&metadataPrefix=%s",
+				URLEncoder.encode(identifier, "UTF-8"),
+				URLEncoder.encode(metadataPrefix, "UTF-8"));
 		URL url = new URL(serviceUrl + "?" + query);
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		connection.setUseCaches(true);
