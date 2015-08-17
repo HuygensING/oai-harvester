@@ -12,6 +12,6 @@ mvn install
 ./run.sh 40 \ # number of parallel threads
   http://www.gahetna.nl/archievenoverzicht/oai-pmh \ # OAI repository URL
   oai_ead_full \ # metadataPrefix
-  naa3 \ # set name
+  naa3 # set name
 
 ```
