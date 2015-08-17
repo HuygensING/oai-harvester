@@ -9,9 +9,6 @@ Harvests the national archives set naa3 with metadataPrefix oai_ead_full
 git clone https://github.com/HuygensING/oai-harvester.git
 cd oai-harvester
 mvn install
-./run.sh 40 \ # number of parallel threads
-  http://www.gahetna.nl/archievenoverzicht/oai-pmh \ # OAI repository URL
-  oai_ead_full \ # metadataPrefix
-  naa3 # set name
+./run.sh 40 http://www.gahetna.nl/archievenoverzicht/oai-pmh oai_ead_full naa3
 
 ```
