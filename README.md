@@ -2,7 +2,7 @@
 
 Quick start (using maven2)
 ----
-Harvests the national archives set naa3 with metadataPrefix oai_ead_full
+Harvests the national archives set naa3 with metadataPrefix oai_ead_full; saves all records to the current working dir
 
 
 ```sh
